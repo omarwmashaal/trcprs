@@ -8,44 +8,19 @@ import json
 
 app = Flask(__name__)
 #cors = CORS(app)
-#CORS(app, resources={r"/*": {"origins": "*"}})
-@app.route('/lat=<float:lat>&long=<float:long>',methods=['GET'])
+#NCORS(app, resources={r"/*": {"origins": "*"}})
+@app.route('/omar')
 #@cross_origin() # allow all origins all methods
 
-def  method(lat,long):
+def  method():
 
-    x  = main(lat,long)
-    #x[0].update(x[1])
-    #y = json.dumps(str(x))
-   # print(json.loads(y))
+    return 'omara'
 
-    print(len(x))
-    return x
-@app.route('/json/',methods=['POST'])
-def  method1():
+@app.route('/wael')
+#@cross_origin() # allow all origins all methods
 
-    content = request.get_json(silent=True)
-    #x  = main(lat,long)
-    #x[0].update(x[1])
-    #y = json.dumps(str(x))
-   # print(json.loads(y))
+def  method():
 
-    #print(len(x))
-    print (content)
-    return jsonify(request.json)
-    
-@app.route('/')
-def  method1():
-
-   
-    #x  = main(lat,long)
-    #x[0].update(x[1])
-    #y = json.dumps(str(x))
-   # print(json.loads(y))
-
-    #print(len(x))
-   
-    return 'hi'
-
+    return 'wael'
 if __name__ == '__main__':
     app.run()
