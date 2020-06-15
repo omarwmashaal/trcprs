@@ -9,7 +9,7 @@ import json
 app = Flask(__name__)
 #cors = CORS(app)
 #NCORS(app, resources={r"/*": {"origins": "*"}})
-@app.route('/omar')
+@app.route('/')
 #@cross_origin() # allow all origins all methods
 
 def  method():
