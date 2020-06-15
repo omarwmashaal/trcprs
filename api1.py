@@ -33,6 +33,19 @@ def  method1():
     #print(len(x))
     print (content)
     return jsonify(request.json)
+    
+@app.route('/')
+def  method1():
+
+   
+    #x  = main(lat,long)
+    #x[0].update(x[1])
+    #y = json.dumps(str(x))
+   # print(json.loads(y))
+
+    #print(len(x))
+   
+    return 'hi'
 
 if __name__ == '__main__':
     app.run()
