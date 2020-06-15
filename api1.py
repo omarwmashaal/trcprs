@@ -16,11 +16,11 @@ def  method():
 
     return 'omara'
 
-@app.route('/wael')
+@app.route('/wael',methods=['GET'])
 #@cross_origin() # allow all origins all methods
 
 def  method():
 
-    return 'wael'
+    return 'waely'
 if __name__ == '__main__':
     app.run()
